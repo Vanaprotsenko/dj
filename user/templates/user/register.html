@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Имя">
+        <input type="text" name="surname" placeholder="Прізвище">
+        <input type="text" name="username" placeholder="Юзеим'я">
+        <input type="password" name="password" placeholder="пароль">
+        <input type="password" name="confirm_password" placeholder="підтверидить пароль">
+        <button>Зарегіструватися</button>
+
+        <a href="auth/">Якщо ви не зареїструвалися то можете це зробити</a>
+
+        <p>{{error}}</p>
+        
+        <p>{{in_bd}}</p>
+        
+        
+    </form>
+    
+</body>
+</html>
